@@ -12,7 +12,6 @@ var AppComponent = /** @class */ (function () {
     function AppComponent() {
     }
     AppComponent.prototype.search = function (value) {
-        console.log(value);
         this.searchValue = value;
     };
     AppComponent = __decorate([

@@ -1,5 +1,15 @@
 <div class="card">
-    <img class="photos" src="../../../assets/Imagens/sailor.jpg">
+
     <h2>{{title}}</h2>
-    <button class="btn_SaibaMais">Saiba Mais</button>
+
+    <button *ngIf="!info" (click)="getInfo(url)" class="btn_SaibaMais">Saiba Mais</button>
+
+    <div *ngIf="info">
+        <img class="photos" src="{{info.sprites.front_default}}">
+        <p> id:{{info.id}}</p>
+        <p> experiencia:{{info.base_experience}}</p>
+        <p *ngFor="let habilidades of info.abilities"> habilidades:{{habilidades.ability.name}}</p>
+        <p> peso:{{info.height}}</p>
+        <button (click)="eraseInfo()" class="btn_SaibaMais">Ver menos</button>
+    </div>
 </div>

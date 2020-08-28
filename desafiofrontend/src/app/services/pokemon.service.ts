@@ -12,6 +12,8 @@ export class PokemonService {
   public getPokemons() {
     return this.httpClient.get(this.url, this.httpOptions) as Observable<any>;
   }
-
+  public getPokemonInfo(url: string){
+    return this.httpClient.get(url, this.httpOptions) as Observable<any>;
+  }
   constructor(private httpClient: HttpClient) {}
 }

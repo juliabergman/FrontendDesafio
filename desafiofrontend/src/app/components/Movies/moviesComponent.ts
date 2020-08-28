@@ -16,7 +16,6 @@ export class MoviesComponent implements OnInit {
   public getPokemon(): void {
     this.pokemonService.getPokemons().subscribe((pokemons) => {
       this.pokemons = pokemons.results;
-      console.log(pokemons.results);
     });
   }
 }

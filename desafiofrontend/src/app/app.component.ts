@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public searchValue!: string;
   public search(value: string): void {
-    console.log(value);
     this.searchValue = value;
   }
 }

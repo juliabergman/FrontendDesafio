@@ -19,7 +19,6 @@ var MoviesComponent = /** @class */ (function () {
         var _this = this;
         this.pokemonService.getPokemons().subscribe(function (pokemons) {
             _this.pokemons = pokemons.results;
-            console.log(pokemons.results);
         });
     };
     __decorate([

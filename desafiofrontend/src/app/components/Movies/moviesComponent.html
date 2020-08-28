@@ -1,12 +1,7 @@
 <div class="container">
-
     <div class="cards">
-
-        <app-cardComponent *ngFor="let pokemon of pokemons | listFilter:search" title="{{pokemon.name}}">
-
+        <app-cardComponent *ngFor="let pokemon of pokemons | listFilter:search" title="{{pokemon.name}}" url="{{pokemon.url}}">
         </app-cardComponent>
         <p *ngIf="(pokemons | listFilter:search).length === 0">Nenhum item encontrado :(</p>
-
-
     </div>
 </div>

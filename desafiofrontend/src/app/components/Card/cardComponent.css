@@ -4,17 +4,31 @@
 }
 
 .card {
-    height: 250px;
     background-color: #727277;
     border: solid 1px gray;
     padding: 20px;
     border-radius: 15px;
     margin: 15px;
+    width: 250px;
+}
+
+.card p {
+    background-color: #232323;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.card img {
+    background-color: white;
+    display: block;
+    margin: 15px auto;
 }
 
 .card h2 {
     color: white;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .card .photos {
