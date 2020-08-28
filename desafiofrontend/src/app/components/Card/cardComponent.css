@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    height: 250px;
+    background-color: #727277;
+    border: solid 1px gray;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+.card h2 {
+    color: white;
+    text-align: center;
+}
+
+.card .photos {
+    width: 200px;
+}
+
+.btn_SaibaMais a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    align-items: baseline;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn_SaibaMais {
+    width: 100%;
+    background-color: #E5320E;
+    border: none;
+    margin-top: 50px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn_SaibaMais:hover {
+    background-color: #232323;
+}
+
+.card .list-titles:focus,
+.card .list-titles:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
